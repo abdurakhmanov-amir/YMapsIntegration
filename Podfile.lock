@@ -1,0 +1,20 @@
+PODS:
+  - Swinject (2.9.1)
+  - YandexMapsMobile (4.11.0-full)
+
+DEPENDENCIES:
+  - Swinject
+  - YandexMapsMobile (= 4.11.0-full)
+
+SPEC REPOS:
+  trunk:
+    - Swinject
+    - YandexMapsMobile
+
+SPEC CHECKSUMS:
+  Swinject: a827d508c6270da03ec74e558e728917a888fa9b
+  YandexMapsMobile: 408a1e50eb8792e3aebfe11820de39b560024598
+
+PODFILE CHECKSUM: 1f339c2644d00a9fdc2b2ff0d8c96ee7bbf6d8df
+
+COCOAPODS: 1.13.0

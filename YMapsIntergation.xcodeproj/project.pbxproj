@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		294BF8A92D88BE5F006DA6F3 /* TestPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294BF8A82D88BE5F006DA6F3 /* TestPresent.swift */; };
+		294BF8AC2D88C712006DA6F3 /* PanToDismissController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294BF8AB2D88C712006DA6F3 /* PanToDismissController.swift */; };
+		296A709A2D8592ED00680D20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296A70992D8592ED00680D20 /* AppDelegate.swift */; };
+		296A709E2D8592ED00680D20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296A709D2D8592ED00680D20 /* ViewController.swift */; };
+		296A70A32D8592EE00680D20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 296A70A22D8592EE00680D20 /* Assets.xcassets */; };
+		296A70A62D8592EE00680D20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 296A70A42D8592EE00680D20 /* LaunchScreen.storyboard */; };
+		296A70AE2D859C5000680D20 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296A70AD2D859C5000680D20 /* ViewController.xib */; };
+		296A70B32D85A3DF00680D20 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296A70B22D85A3DF00680D20 /* TabBarController.swift */; };
+		296A70B62D85A51C00680D20 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296A70B42D85A51C00680D20 /* ViewController2.swift */; };
+		296A70B72D85A51C00680D20 /* ViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296A70B52D85A51C00680D20 /* ViewController2.xib */; };
+		296A70BA2D85A7DF00680D20 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296A70B82D85A7DF00680D20 /* ViewController3.swift */; };
+		296A70BB2D85A7DF00680D20 /* ViewController3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296A70B92D85A7DF00680D20 /* ViewController3.xib */; };
+		29FB0AE82D87264400AAF620 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FB0AE62D87264400AAF620 /* MapView.swift */; };
+		29FB0AE92D87264400AAF620 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29FB0AE72D87264400AAF620 /* MapView.xib */; };
+		2C06F2314CDC6E4A2624EED9 /* Pods_YMapsIntergation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEEF2ED2B9EC9EAB11E5E6ED /* Pods_YMapsIntergation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		294BF8A82D88BE5F006DA6F3 /* TestPresent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPresent.swift; sourceTree = "<group>"; };
+		294BF8AB2D88C712006DA6F3 /* PanToDismissController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanToDismissController.swift; sourceTree = "<group>"; };
+		296A70962D8592ED00680D20 /* YMapsIntergation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMapsIntergation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		296A70992D8592ED00680D20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		296A709D2D8592ED00680D20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		296A70A22D8592EE00680D20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		296A70A52D8592EE00680D20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		296A70A72D8592EE00680D20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		296A70AD2D859C5000680D20 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		296A70B22D85A3DF00680D20 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		296A70B42D85A51C00680D20 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		296A70B52D85A51C00680D20 /* ViewController2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController2.xib; sourceTree = "<group>"; };
+		296A70B82D85A7DF00680D20 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		296A70B92D85A7DF00680D20 /* ViewController3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController3.xib; sourceTree = "<group>"; };
+		29FB0AE62D87264400AAF620 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		29FB0AE72D87264400AAF620 /* MapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
+		54B0A2BCF3188D777353E52B /* Pods-YMapsIntergation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YMapsIntergation.release.xcconfig"; path = "Target Support Files/Pods-YMapsIntergation/Pods-YMapsIntergation.release.xcconfig"; sourceTree = "<group>"; };
+		5AFFE11EE01CF277B7D26A2E /* Pods-YMapsIntergation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YMapsIntergation.debug.xcconfig"; path = "Target Support Files/Pods-YMapsIntergation/Pods-YMapsIntergation.debug.xcconfig"; sourceTree = "<group>"; };
+		EEEF2ED2B9EC9EAB11E5E6ED /* Pods_YMapsIntergation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YMapsIntergation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		296A70932D8592ED00680D20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C06F2314CDC6E4A2624EED9 /* Pods_YMapsIntergation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		294BF8AA2D88C6E6006DA6F3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				294BF8AB2D88C712006DA6F3 /* PanToDismissController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		296A708D2D8592ED00680D20 = {
+			isa = PBXGroup;
+			children = (
+				296A70982D8592ED00680D20 /* YMapsIntergation */,
+				296A70972D8592ED00680D20 /* Products */,
+				B41C0468AB3E02755DB2F6EC /* Pods */,
+				B8A956D919EDB7503BC5BA1E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		296A70972D8592ED00680D20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				296A70962D8592ED00680D20 /* YMapsIntergation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		296A70982D8592ED00680D20 /* YMapsIntergation */ = {
+			isa = PBXGroup;
+			children = (
+				296A70B12D85A0B200680D20 /* Models */,
+				296A70B02D85A0A900680D20 /* ViewModels */,
+				296A70AF2D85A09F00680D20 /* Views */,
+				296A70992D8592ED00680D20 /* AppDelegate.swift */,
+				296A709D2D8592ED00680D20 /* ViewController.swift */,
+				296A70A22D8592EE00680D20 /* Assets.xcassets */,
+				296A70A42D8592EE00680D20 /* LaunchScreen.storyboard */,
+				296A70A72D8592EE00680D20 /* Info.plist */,
+				296A70AD2D859C5000680D20 /* ViewController.xib */,
+			);
+			path = YMapsIntergation;
+			sourceTree = "<group>";
+		};
+		296A70AF2D85A09F00680D20 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				294BF8AA2D88C6E6006DA6F3 /* Common */,
+				296A70B22D85A3DF00680D20 /* TabBarController.swift */,
+				296A70B42D85A51C00680D20 /* ViewController2.swift */,
+				296A70B52D85A51C00680D20 /* ViewController2.xib */,
+				296A70B82D85A7DF00680D20 /* ViewController3.swift */,
+				296A70B92D85A7DF00680D20 /* ViewController3.xib */,
+				29FB0AE62D87264400AAF620 /* MapView.swift */,
+				29FB0AE72D87264400AAF620 /* MapView.xib */,
+				294BF8A82D88BE5F006DA6F3 /* TestPresent.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		296A70B02D85A0A900680D20 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		296A70B12D85A0B200680D20 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B41C0468AB3E02755DB2F6EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5AFFE11EE01CF277B7D26A2E /* Pods-YMapsIntergation.debug.xcconfig */,
+				54B0A2BCF3188D777353E52B /* Pods-YMapsIntergation.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B8A956D919EDB7503BC5BA1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEEF2ED2B9EC9EAB11E5E6ED /* Pods_YMapsIntergation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		296A70952D8592ED00680D20 /* YMapsIntergation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 296A70AA2D8592EE00680D20 /* Build configuration list for PBXNativeTarget "YMapsIntergation" */;
+			buildPhases = (
+				CF53C00850A4A2771F2BC187 /* [CP] Check Pods Manifest.lock */,
+				296A70922D8592ED00680D20 /* Sources */,
+				296A70932D8592ED00680D20 /* Frameworks */,
+				296A70942D8592ED00680D20 /* Resources */,
+				537045BBD740F73969B52D66 /* [CP] Embed Pods Frameworks */,
+				50453AF358CCB49B478822F6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YMapsIntergation;
+			productName = YMapsIntergation;
+			productReference = 296A70962D8592ED00680D20 /* YMapsIntergation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		296A708E2D8592ED00680D20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					296A70952D8592ED00680D20 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 296A70912D8592ED00680D20 /* Build configuration list for PBXProject "YMapsIntergation" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 296A708D2D8592ED00680D20;
+			productRefGroup = 296A70972D8592ED00680D20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				296A70952D8592ED00680D20 /* YMapsIntergation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		296A70942D8592ED00680D20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				296A70A62D8592EE00680D20 /* LaunchScreen.storyboard in Resources */,
+				296A70B72D85A51C00680D20 /* ViewController2.xib in Resources */,
+				296A70AE2D859C5000680D20 /* ViewController.xib in Resources */,
+				29FB0AE92D87264400AAF620 /* MapView.xib in Resources */,
+				296A70A32D8592EE00680D20 /* Assets.xcassets in Resources */,
+				296A70BB2D85A7DF00680D20 /* ViewController3.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50453AF358CCB49B478822F6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YMapsIntergation/Pods-YMapsIntergation-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YMapsIntergation/Pods-YMapsIntergation-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YMapsIntergation/Pods-YMapsIntergation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		537045BBD740F73969B52D66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YMapsIntergation/Pods-YMapsIntergation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YMapsIntergation/Pods-YMapsIntergation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YMapsIntergation/Pods-YMapsIntergation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF53C00850A4A2771F2BC187 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YMapsIntergation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		296A70922D8592ED00680D20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				296A70BA2D85A7DF00680D20 /* ViewController3.swift in Sources */,
+				294BF8AC2D88C712006DA6F3 /* PanToDismissController.swift in Sources */,
+				294BF8A92D88BE5F006DA6F3 /* TestPresent.swift in Sources */,
+				29FB0AE82D87264400AAF620 /* MapView.swift in Sources */,
+				296A70B32D85A3DF00680D20 /* TabBarController.swift in Sources */,
+				296A70B62D85A51C00680D20 /* ViewController2.swift in Sources */,
+				296A709E2D8592ED00680D20 /* ViewController.swift in Sources */,
+				296A709A2D8592ED00680D20 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		296A70A42D8592EE00680D20 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				296A70A52D8592EE00680D20 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		296A70A82D8592EE00680D20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		296A70A92D8592EE00680D20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		296A70AB2D8592EE00680D20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AFFE11EE01CF277B7D26A2E /* Pods-YMapsIntergation.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YMapsIntergation/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Amir.YMapsIntergation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		296A70AC2D8592EE00680D20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54B0A2BCF3188D777353E52B /* Pods-YMapsIntergation.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YMapsIntergation/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Amir.YMapsIntergation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		296A70912D8592ED00680D20 /* Build configuration list for PBXProject "YMapsIntergation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				296A70A82D8592EE00680D20 /* Debug */,
+				296A70A92D8592EE00680D20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		296A70AA2D8592EE00680D20 /* Build configuration list for PBXNativeTarget "YMapsIntergation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				296A70AB2D8592EE00680D20 /* Debug */,
+				296A70AC2D8592EE00680D20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 296A708E2D8592ED00680D20 /* Project object */;
+}
