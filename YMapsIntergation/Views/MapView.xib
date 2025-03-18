@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="mapContainerView" destination="HVP-kW-AdX" id="3qX-Ur-GaM"/>
                 <outlet property="searchContainerView" destination="k08-6F-Lwu" id="tRs-fb-naS"/>
+                <outlet property="searchLabel" destination="kDm-vL-Vhm" id="lwP-c5-iZy"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -24,27 +25,36 @@
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k08-6F-Lwu">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k08-6F-Lwu" userLabel="SearchContainer">
                     <rect key="frame" x="16" y="56" width="361" height="64"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSR-bg-Trd">
+                        <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSR-bg-Trd">
                             <rect key="frame" x="8" y="8" width="345" height="48"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="my1-l2-2am">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_search" translatesAutoresizingMaskIntoConstraints="NO" id="my1-l2-2am">
                                     <rect key="frame" x="12" y="12" width="24" height="24"/>
+                                    <accessibility key="accessibilityConfiguration">
+                                        <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                    </accessibility>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="24" id="75O-SD-AnJ"/>
                                         <constraint firstAttribute="width" constant="24" id="Rla-VS-Vg4"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDm-vL-Vhm">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDm-vL-Vhm" userLabel="searchLabel">
                                     <rect key="frame" x="48" y="13.666666666666671" width="42" height="21"/>
+                                    <accessibility key="accessibilityConfiguration">
+                                        <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                    </accessibility>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
                             <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <accessibility key="accessibilityConfiguration">
+                                <accessibilityTraits key="traits" notEnabled="YES"/>
+                            </accessibility>
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="my1-l2-2am" secondAttribute="bottom" constant="12" id="LwX-s5-0dL"/>
                                 <constraint firstItem="my1-l2-2am" firstAttribute="top" secondItem="fSR-bg-Trd" secondAttribute="top" constant="12" id="Q2h-S6-t4u"/>
@@ -87,6 +97,7 @@
         </view>
     </objects>
     <resources>
+        <image name="icon_search" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

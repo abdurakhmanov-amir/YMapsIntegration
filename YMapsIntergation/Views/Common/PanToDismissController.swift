@@ -8,8 +8,13 @@
 import UIKit
 
 class PanToDismissController: UIPresentationController {
-    var dimmingView: UIView!
-    var panView: UIView!
+    
+    private let contentTopMargin: CGFloat = 56
+    private let panViewHeight: CGFloat = 26
+    
+    private var dimmingView: UIView!
+    private var panView: UIView!
+    private var slashView: UIView!
     
     private var originalY: CGFloat = 0
     
@@ -19,15 +24,16 @@ class PanToDismissController: UIPresentationController {
         
         setupDimmingView()
         setupPan()
+        setupSlashView()
     }
     
     
     override var frameOfPresentedViewInContainerView: CGRect {
         guard let container = containerView else { return super.frameOfPresentedViewInContainerView }
         let width = container.bounds.size.width
-        let height : CGFloat = container.bounds.size.height - 56
+        let height : CGFloat = container.bounds.size.height - contentTopMargin
 
-        return CGRect(x: 0, y: container.bounds.size.height - height, width: width, height: height)
+        return CGRect(x: 0, y: contentTopMargin, width: width, height: height)
     }
     
     
@@ -37,8 +43,6 @@ class PanToDismissController: UIPresentationController {
     
     
     override func presentationTransitionWillBegin() {
-        guard let dimmingView = dimmingView else { return }
-
         containerView?.addSubview(dimmingView)
         presentedView?.addSubview(panView)
         
@@ -50,7 +54,15 @@ class PanToDismissController: UIPresentationController {
         panView.leadingAnchor.constraint(equalTo: presentedView!.leadingAnchor).isActive = true
         panView.trailingAnchor.constraint(equalTo: presentedView!.trailingAnchor).isActive = true
         panView.topAnchor.constraint(equalTo: presentedView!.topAnchor).isActive = true
-        panView.heightAnchor.constraint(equalToConstant: 26).isActive = true
+        panView.heightAnchor.constraint(equalToConstant: panViewHeight).isActive = true
+        
+        panView.addSubview(slashView)
+        
+        slashView.translatesAutoresizingMaskIntoConstraints = false
+        slashView.heightAnchor.constraint(equalToConstant: 4).isActive = true
+        slashView.widthAnchor.constraint(equalToConstant: 40).isActive = true
+        slashView.topAnchor.constraint(equalTo: panView.topAnchor, constant: 8).isActive = true
+        slashView.centerXAnchor.constraint(equalTo: panView.centerXAnchor).isActive = true
         
         let viewPan = UIPanGestureRecognizer(target: self, action: #selector(viewPanned(_:)))
         panView?.addGestureRecognizer(viewPan)
@@ -117,8 +129,13 @@ class PanToDismissController: UIPresentationController {
     func setupPan() {
         panView = UIView()
         panView.translatesAutoresizingMaskIntoConstraints = false
-        panView.backgroundColor = UIColor.green
-        panView.alpha = 1
+        panView.backgroundColor = UIColor.white
+    }
+    
+    func setupSlashView() {
+        slashView = UIView()
+        slashView.backgroundColor = UIColor(red: 208.0/255.0, green: 207.0/255.0, blue: 207.0/255.0, alpha: 1.0)
+        slashView.layer.cornerRadius = 2
     }
     
 
@@ -134,7 +151,7 @@ class PanToDismissController: UIPresentationController {
             case .began:
                 originalY = presentedViewController.view.frame.origin.y
             case .changed:
-                if originalY + translate.y > 0 {
+                if translate.y > 0 {
                     presentedViewController.view.frame.origin.y = originalY + translate.y
                 }
             case .ended:

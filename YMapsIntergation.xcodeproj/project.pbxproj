@@ -19,6 +19,10 @@
 		296A70B72D85A51C00680D20 /* ViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296A70B52D85A51C00680D20 /* ViewController2.xib */; };
 		296A70BA2D85A7DF00680D20 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296A70B82D85A7DF00680D20 /* ViewController3.swift */; };
 		296A70BB2D85A7DF00680D20 /* ViewController3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296A70B92D85A7DF00680D20 /* ViewController3.xib */; };
+		299786972D8A11B6006E248B /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299786952D8A11B6006E248B /* SearchView.swift */; };
+		299786982D8A11B6006E248B /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 299786962D8A11B6006E248B /* SearchView.xib */; };
+		2997869C2D8A16AC006E248B /* SearchSuggestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2997869A2D8A16AC006E248B /* SearchSuggestionCell.swift */; };
+		2997869D2D8A16AC006E248B /* SearchSuggestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2997869B2D8A16AC006E248B /* SearchSuggestionCell.xib */; };
 		29FB0AE82D87264400AAF620 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FB0AE62D87264400AAF620 /* MapView.swift */; };
 		29FB0AE92D87264400AAF620 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29FB0AE72D87264400AAF620 /* MapView.xib */; };
 		2C06F2314CDC6E4A2624EED9 /* Pods_YMapsIntergation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEEF2ED2B9EC9EAB11E5E6ED /* Pods_YMapsIntergation.framework */; };
@@ -39,6 +43,10 @@
 		296A70B52D85A51C00680D20 /* ViewController2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController2.xib; sourceTree = "<group>"; };
 		296A70B82D85A7DF00680D20 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		296A70B92D85A7DF00680D20 /* ViewController3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController3.xib; sourceTree = "<group>"; };
+		299786952D8A11B6006E248B /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		299786962D8A11B6006E248B /* SearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
+		2997869A2D8A16AC006E248B /* SearchSuggestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSuggestionCell.swift; sourceTree = "<group>"; };
+		2997869B2D8A16AC006E248B /* SearchSuggestionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchSuggestionCell.xib; sourceTree = "<group>"; };
 		29FB0AE62D87264400AAF620 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		29FB0AE72D87264400AAF620 /* MapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
 		54B0A2BCF3188D777353E52B /* Pods-YMapsIntergation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YMapsIntergation.release.xcconfig"; path = "Target Support Files/Pods-YMapsIntergation/Pods-YMapsIntergation.release.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +111,7 @@
 		296A70AF2D85A09F00680D20 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				299786992D8A165B006E248B /* Cells */,
 				294BF8AA2D88C6E6006DA6F3 /* Common */,
 				296A70B22D85A3DF00680D20 /* TabBarController.swift */,
 				296A70B42D85A51C00680D20 /* ViewController2.swift */,
@@ -112,6 +121,8 @@
 				29FB0AE62D87264400AAF620 /* MapView.swift */,
 				29FB0AE72D87264400AAF620 /* MapView.xib */,
 				294BF8A82D88BE5F006DA6F3 /* TestPresent.swift */,
+				299786952D8A11B6006E248B /* SearchView.swift */,
+				299786962D8A11B6006E248B /* SearchView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -128,6 +139,15 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		299786992D8A165B006E248B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2997869A2D8A16AC006E248B /* SearchSuggestionCell.swift */,
+				2997869B2D8A16AC006E248B /* SearchSuggestionCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		B41C0468AB3E02755DB2F6EC /* Pods */ = {
@@ -209,11 +229,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				296A70A62D8592EE00680D20 /* LaunchScreen.storyboard in Resources */,
+				299786982D8A11B6006E248B /* SearchView.xib in Resources */,
 				296A70B72D85A51C00680D20 /* ViewController2.xib in Resources */,
 				296A70AE2D859C5000680D20 /* ViewController.xib in Resources */,
 				29FB0AE92D87264400AAF620 /* MapView.xib in Resources */,
 				296A70A32D8592EE00680D20 /* Assets.xcassets in Resources */,
 				296A70BB2D85A7DF00680D20 /* ViewController3.xib in Resources */,
+				2997869D2D8A16AC006E248B /* SearchSuggestionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +306,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				296A70BA2D85A7DF00680D20 /* ViewController3.swift in Sources */,
+				299786972D8A11B6006E248B /* SearchView.swift in Sources */,
 				294BF8AC2D88C712006DA6F3 /* PanToDismissController.swift in Sources */,
+				2997869C2D8A16AC006E248B /* SearchSuggestionCell.swift in Sources */,
 				294BF8A92D88BE5F006DA6F3 /* TestPresent.swift in Sources */,
 				29FB0AE82D87264400AAF620 /* MapView.swift in Sources */,
 				296A70B32D85A3DF00680D20 /* TabBarController.swift in Sources */,
