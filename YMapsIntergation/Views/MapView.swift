@@ -39,8 +39,14 @@ class MapView: UIViewController, UIViewControllerTransitioningDelegate {
     
     @objc func showSearch() {
         let vc = SearchView()
+        
         vc.modalPresentationStyle = .custom
         vc.transitioningDelegate = self
+        
+        vc.topRightMapPoint = mapView.mapWindow.map.visibleRegion.topRight
+        vc.bottomLeftMapPoint = mapView.mapWindow.map.visibleRegion.bottomLeft
+        vc.currentGeometry = YMKVisibleRegionUtils.toPolygon(with: mapView.mapWindow.map.visibleRegion)
+        
         self.present(vc, animated: true)
     }
 

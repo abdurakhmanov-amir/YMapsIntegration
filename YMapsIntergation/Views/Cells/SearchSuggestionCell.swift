@@ -8,13 +8,22 @@
 import UIKit
 
 class SearchSuggestionCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    
+    static let Identifier = "SearchSuggestionCell"
+    
+    private var model: AddressModel!
+    
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var addressLabel: UILabel!
+    
+    func setModel(_ model: AddressModel) {
+        self.model = model
+        
+        titleLabel.text = self.model.title
+        addressLabel.text = self.model.address
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    
+    func prepare() {
+        
     }
 }

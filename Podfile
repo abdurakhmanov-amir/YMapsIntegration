@@ -7,5 +7,5 @@ target 'YMapsIntergation' do
 
   # Pods for YMapsIntergation
   pod 'Swinject'
-  pod 'YandexMapsMobile', '4.11.0-full'
+  pod 'YandexMapsMobile', '4.10.0-full'
 end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29250B3A2D8B2181007E84B7 /* AddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29250B392D8B2173007E84B7 /* AddressModel.swift */; };
 		294BF8A92D88BE5F006DA6F3 /* TestPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294BF8A82D88BE5F006DA6F3 /* TestPresent.swift */; };
 		294BF8AC2D88C712006DA6F3 /* PanToDismissController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294BF8AB2D88C712006DA6F3 /* PanToDismissController.swift */; };
 		296A709A2D8592ED00680D20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296A70992D8592ED00680D20 /* AppDelegate.swift */; };
@@ -25,10 +26,11 @@
 		2997869D2D8A16AC006E248B /* SearchSuggestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2997869B2D8A16AC006E248B /* SearchSuggestionCell.xib */; };
 		29FB0AE82D87264400AAF620 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FB0AE62D87264400AAF620 /* MapView.swift */; };
 		29FB0AE92D87264400AAF620 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29FB0AE72D87264400AAF620 /* MapView.xib */; };
-		2C06F2314CDC6E4A2624EED9 /* Pods_YMapsIntergation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEEF2ED2B9EC9EAB11E5E6ED /* Pods_YMapsIntergation.framework */; };
+		35EEFB8DB90917D3ADF04EE9 /* Pods_YMapsIntergation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E49C0E6115692C422CFF4C7C /* Pods_YMapsIntergation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29250B392D8B2173007E84B7 /* AddressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressModel.swift; sourceTree = "<group>"; };
 		294BF8A82D88BE5F006DA6F3 /* TestPresent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPresent.swift; sourceTree = "<group>"; };
 		294BF8AB2D88C712006DA6F3 /* PanToDismissController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanToDismissController.swift; sourceTree = "<group>"; };
 		296A70962D8592ED00680D20 /* YMapsIntergation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMapsIntergation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,9 +51,9 @@
 		2997869B2D8A16AC006E248B /* SearchSuggestionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchSuggestionCell.xib; sourceTree = "<group>"; };
 		29FB0AE62D87264400AAF620 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		29FB0AE72D87264400AAF620 /* MapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
-		54B0A2BCF3188D777353E52B /* Pods-YMapsIntergation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YMapsIntergation.release.xcconfig"; path = "Target Support Files/Pods-YMapsIntergation/Pods-YMapsIntergation.release.xcconfig"; sourceTree = "<group>"; };
-		5AFFE11EE01CF277B7D26A2E /* Pods-YMapsIntergation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YMapsIntergation.debug.xcconfig"; path = "Target Support Files/Pods-YMapsIntergation/Pods-YMapsIntergation.debug.xcconfig"; sourceTree = "<group>"; };
-		EEEF2ED2B9EC9EAB11E5E6ED /* Pods_YMapsIntergation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YMapsIntergation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C3F9BED0E83AB57E2CDC75 /* Pods-YMapsIntergation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YMapsIntergation.release.xcconfig"; path = "Target Support Files/Pods-YMapsIntergation/Pods-YMapsIntergation.release.xcconfig"; sourceTree = "<group>"; };
+		C568B81355920E897556DB57 /* Pods-YMapsIntergation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YMapsIntergation.debug.xcconfig"; path = "Target Support Files/Pods-YMapsIntergation/Pods-YMapsIntergation.debug.xcconfig"; sourceTree = "<group>"; };
+		E49C0E6115692C422CFF4C7C /* Pods_YMapsIntergation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YMapsIntergation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C06F2314CDC6E4A2624EED9 /* Pods_YMapsIntergation.framework in Frameworks */,
+				35EEFB8DB90917D3ADF04EE9 /* Pods_YMapsIntergation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +82,7 @@
 				296A70982D8592ED00680D20 /* YMapsIntergation */,
 				296A70972D8592ED00680D20 /* Products */,
 				B41C0468AB3E02755DB2F6EC /* Pods */,
-				B8A956D919EDB7503BC5BA1E /* Frameworks */,
+				4F107908518A8CA25BEBB284 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +139,7 @@
 		296A70B12D85A0B200680D20 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				29250B392D8B2173007E84B7 /* AddressModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -150,21 +153,21 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		4F107908518A8CA25BEBB284 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E49C0E6115692C422CFF4C7C /* Pods_YMapsIntergation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B41C0468AB3E02755DB2F6EC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5AFFE11EE01CF277B7D26A2E /* Pods-YMapsIntergation.debug.xcconfig */,
-				54B0A2BCF3188D777353E52B /* Pods-YMapsIntergation.release.xcconfig */,
+				C568B81355920E897556DB57 /* Pods-YMapsIntergation.debug.xcconfig */,
+				84C3F9BED0E83AB57E2CDC75 /* Pods-YMapsIntergation.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		B8A956D919EDB7503BC5BA1E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				EEEF2ED2B9EC9EAB11E5E6ED /* Pods_YMapsIntergation.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,12 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 296A70AA2D8592EE00680D20 /* Build configuration list for PBXNativeTarget "YMapsIntergation" */;
 			buildPhases = (
-				CF53C00850A4A2771F2BC187 /* [CP] Check Pods Manifest.lock */,
+				A8FDA7A48697529B466F223D /* [CP] Check Pods Manifest.lock */,
 				296A70922D8592ED00680D20 /* Sources */,
 				296A70932D8592ED00680D20 /* Frameworks */,
 				296A70942D8592ED00680D20 /* Resources */,
-				537045BBD740F73969B52D66 /* [CP] Embed Pods Frameworks */,
-				50453AF358CCB49B478822F6 /* [CP] Copy Pods Resources */,
+				2255CD857B74CC4833FD3848 /* [CP] Embed Pods Frameworks */,
+				C0FA0067AF73C2EC08CC8B13 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -242,24 +245,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		50453AF358CCB49B478822F6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YMapsIntergation/Pods-YMapsIntergation-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YMapsIntergation/Pods-YMapsIntergation-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YMapsIntergation/Pods-YMapsIntergation-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		537045BBD740F73969B52D66 /* [CP] Embed Pods Frameworks */ = {
+		2255CD857B74CC4833FD3848 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -276,7 +262,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YMapsIntergation/Pods-YMapsIntergation-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CF53C00850A4A2771F2BC187 /* [CP] Check Pods Manifest.lock */ = {
+		A8FDA7A48697529B466F223D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -298,6 +284,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C0FA0067AF73C2EC08CC8B13 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YMapsIntergation/Pods-YMapsIntergation-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YMapsIntergation/Pods-YMapsIntergation-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YMapsIntergation/Pods-YMapsIntergation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -305,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29250B3A2D8B2181007E84B7 /* AddressModel.swift in Sources */,
 				296A70BA2D85A7DF00680D20 /* ViewController3.swift in Sources */,
 				299786972D8A11B6006E248B /* SearchView.swift in Sources */,
 				294BF8AC2D88C712006DA6F3 /* PanToDismissController.swift in Sources */,
@@ -453,7 +457,7 @@
 		};
 		296A70AB2D8592EE00680D20 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5AFFE11EE01CF277B7D26A2E /* Pods-YMapsIntergation.debug.xcconfig */;
+			baseConfigurationReference = C568B81355920E897556DB57 /* Pods-YMapsIntergation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -484,7 +488,7 @@
 		};
 		296A70AC2D8592EE00680D20 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 54B0A2BCF3188D777353E52B /* Pods-YMapsIntergation.release.xcconfig */;
+			baseConfigurationReference = 84C3F9BED0E83AB57E2CDC75 /* Pods-YMapsIntergation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
