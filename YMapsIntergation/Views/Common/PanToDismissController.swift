@@ -9,7 +9,7 @@ import UIKit
 
 class PanToDismissController: UIPresentationController {
     
-    private let contentTopMargin: CGFloat = 56
+    private let contentTopMargin: CGFloat = 400
     private let panViewHeight: CGFloat = 26
     
     private var dimmingView: UIView!

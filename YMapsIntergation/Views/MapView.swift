@@ -36,7 +36,13 @@ class MapView: UIViewController, UIViewControllerTransitioningDelegate {
     
     
     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
-        return PanToDismissController(presentedViewController: presented, presenting: presenting)
+        if presented is SearchView {
+            return PanToDismissController(presentedViewController: presented, presenting: presenting)
+        }
+        else {
+            return SmallModalController(presentedViewController: presented, presenting: presenting)
+        }
+        
     }
     
     
@@ -56,5 +62,13 @@ class MapView: UIViewController, UIViewControllerTransitioningDelegate {
         let cameraPoint = selectedAddress.geometry?.point ?? defaultCameraPoint
         let position = YMKCameraPosition(target: cameraPoint, zoom: 14, azimuth: 0, tilt: 0)
         mapView.mapWindow.map.move(with: position)
+        
+        let currentGeometry = YMKVisibleRegionUtils.toPolygon(with: mapView.mapWindow.map.visibleRegion)
+        let vc = AddressDetailView()
+        
+        vc.modalPresentationStyle = .custom
+        vc.transitioningDelegate = self
+        
+        self.present(vc, animated: true)
     }
 }

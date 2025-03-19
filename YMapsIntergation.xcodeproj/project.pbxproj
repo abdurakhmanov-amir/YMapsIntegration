@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		29250B3A2D8B2181007E84B7 /* AddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29250B392D8B2173007E84B7 /* AddressModel.swift */; };
+		29250B3D2D8B766B007E84B7 /* AddressDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29250B3C2D8B766B007E84B7 /* AddressDetailView.swift */; };
+		29250B3F2D8B7681007E84B7 /* AddressDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29250B3E2D8B7681007E84B7 /* AddressDetailView.xib */; };
+		29250B412D8B88ED007E84B7 /* SmallModalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29250B402D8B88ED007E84B7 /* SmallModalController.swift */; };
 		294BF8A92D88BE5F006DA6F3 /* TestPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294BF8A82D88BE5F006DA6F3 /* TestPresent.swift */; };
 		294BF8AC2D88C712006DA6F3 /* PanToDismissController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294BF8AB2D88C712006DA6F3 /* PanToDismissController.swift */; };
 		296A709A2D8592ED00680D20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296A70992D8592ED00680D20 /* AppDelegate.swift */; };
@@ -31,6 +34,9 @@
 
 /* Begin PBXFileReference section */
 		29250B392D8B2173007E84B7 /* AddressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressModel.swift; sourceTree = "<group>"; };
+		29250B3C2D8B766B007E84B7 /* AddressDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDetailView.swift; sourceTree = "<group>"; };
+		29250B3E2D8B7681007E84B7 /* AddressDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressDetailView.xib; sourceTree = "<group>"; };
+		29250B402D8B88ED007E84B7 /* SmallModalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallModalController.swift; sourceTree = "<group>"; };
 		294BF8A82D88BE5F006DA6F3 /* TestPresent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPresent.swift; sourceTree = "<group>"; };
 		294BF8AB2D88C712006DA6F3 /* PanToDismissController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanToDismissController.swift; sourceTree = "<group>"; };
 		296A70962D8592ED00680D20 /* YMapsIntergation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMapsIntergation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +77,8 @@
 		29250B3B2D8B7552007E84B7 /* Partials */ = {
 			isa = PBXGroup;
 			children = (
+				29250B3C2D8B766B007E84B7 /* AddressDetailView.swift */,
+				29250B3E2D8B7681007E84B7 /* AddressDetailView.xib */,
 			);
 			path = Partials;
 			sourceTree = "<group>";
@@ -79,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				294BF8AB2D88C712006DA6F3 /* PanToDismissController.swift */,
+				29250B402D8B88ED007E84B7 /* SmallModalController.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -242,6 +251,7 @@
 				296A70A62D8592EE00680D20 /* LaunchScreen.storyboard in Resources */,
 				299786982D8A11B6006E248B /* SearchView.xib in Resources */,
 				296A70B72D85A51C00680D20 /* ViewController2.xib in Resources */,
+				29250B3F2D8B7681007E84B7 /* AddressDetailView.xib in Resources */,
 				296A70AE2D859C5000680D20 /* ViewController.xib in Resources */,
 				29FB0AE92D87264400AAF620 /* MapView.xib in Resources */,
 				296A70A32D8592EE00680D20 /* Assets.xcassets in Resources */,
@@ -317,7 +327,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				29250B3A2D8B2181007E84B7 /* AddressModel.swift in Sources */,
+				29250B412D8B88ED007E84B7 /* SmallModalController.swift in Sources */,
 				296A70BA2D85A7DF00680D20 /* ViewController3.swift in Sources */,
+				29250B3D2D8B766B007E84B7 /* AddressDetailView.swift in Sources */,
 				299786972D8A11B6006E248B /* SearchView.swift in Sources */,
 				294BF8AC2D88C712006DA6F3 /* PanToDismissController.swift in Sources */,
 				2997869C2D8A16AC006E248B /* SearchSuggestionCell.swift in Sources */,
