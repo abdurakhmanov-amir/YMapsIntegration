@@ -13,22 +13,37 @@ class SearchView: UIViewController, ObservableObject {
 
     @IBOutlet var searchContainerView: UIView!
     @IBOutlet var tableView: UITableView!
-    @IBOutlet weak var searchTextField: UITextField!
+    @IBOutlet var searchTextField: UITextField!
     
-    var topRightMapPoint: YMKPoint!
-    var bottomLeftMapPoint: YMKPoint!
-    var currentGeometry: YMKGeometry!
+    private var currentGeometry: YMKGeometry
+    private var completionHandler: (AddressModel) -> Void
     
-    var suggestions: [AddressModel] = []
-    var tableViewSource: SuggestionsTableViewSource!
+    private var suggestions: [AddressModel] = []
+    private var tableViewSource: SuggestionsTableViewSource!
     
-    @Published var searchedText = ""
+    @Published private var searchedText = ""
     
-    var suggestSession: YMKSearchSuggestSession!
-    var searchManager: YMKSearchManager!
-    var searchSession: YMKSearchSession!
+    private var searchManager: YMKSearchManager!
+    private var searchSession: YMKSearchSession!
     
-    var cancelables: [AnyCancellable] = []
+    private var cancelables: [AnyCancellable] = []
+    
+    
+    init(_ currentGeometry: YMKGeometry,  _ completionHanler: @escaping (AddressModel) -> Void) {
+        self.currentGeometry = currentGeometry
+        self.completionHandler = completionHanler
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    
+    required init?(coder: NSCoder) {
+        self.currentGeometry = YMKGeometry()
+        self.completionHandler = {address in }
+        
+        super.init(coder: coder)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +57,6 @@ class SearchView: UIViewController, ObservableObject {
         tableView.reloadData()
         
         searchManager = YMKSearchFactory.instance().createSearchManager(with: .combined)
-        suggestSession = searchManager.createSuggestSession()
         
         searchTextField.addTarget(self, action: #selector(searchTextChanged), for: .editingChanged)
         
@@ -59,39 +73,22 @@ class SearchView: UIViewController, ObservableObject {
             .store(in: &cancelables)
     }
     
-    @objc func searchTextChanged(textField: UITextField) {
+    
+    @objc private func searchTextChanged(textField: UITextField) {
         self.searchedText = textField.text ?? ""
     }
     
-    func search(_ searchText: String) {
-        let suggestOptions = YMKSuggestOptions()
-        
+    
+    private func search(_ searchText: String) {
         searchSession = searchManager.submit(withText: searchText,
                              geometry: currentGeometry,
                              searchOptions: YMKSearchOptions(),
                              responseHandler: searchResponseHandler)
         
     }
+
     
-    func searchResponseHandler(response: YMKSuggestResponse?, error: Error?) {
-        if let error {
-            print(error)
-            
-            return
-        }
-        
-        if (response == nil || response?.items.count == 0) {
-            return
-        }
-        
-        self.tableViewSource.data = response!.items.map { suggestion in
-            return AddressModel(suggestion)
-        }
-        
-        self.tableView.reloadData()
-    }
-    
-    func searchResponseHandler(response: YMKSearchResponse?, error: Error?) {
+    private func searchResponseHandler(response: YMKSearchResponse?, error: Error?) {
         if let error {
             print(error)
             
@@ -109,14 +106,24 @@ class SearchView: UIViewController, ObservableObject {
         let searchItems = response.collection.children
         
         self.tableViewSource.data = searchItems.map { searchItem in
-            return AddressModel(searchItem)
+            let address = AddressModel(searchItem)
+            address.selectedHandler = searchItemSelected
+            
+            return address
         }
         
         self.tableView.reloadData()
     }
+    
+    
+    private func searchItemSelected(_ selectedAddress: AddressModel) {
+        completionHandler(selectedAddress)
+        dismiss(animated: true)
+    }
 }
 
-class SuggestionsTableViewSource: NSObject, UITableViewDataSource {
+
+fileprivate class SuggestionsTableViewSource: NSObject, UITableViewDataSource {
     
     var data: [AddressModel]
     

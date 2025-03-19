@@ -68,6 +68,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29250B3B2D8B7552007E84B7 /* Partials */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Partials;
+			sourceTree = "<group>";
+		};
 		294BF8AA2D88C6E6006DA6F3 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +120,7 @@
 		296A70AF2D85A09F00680D20 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				29250B3B2D8B7552007E84B7 /* Partials */,
 				299786992D8A165B006E248B /* Cells */,
 				294BF8AA2D88C6E6006DA6F3 /* Common */,
 				296A70B22D85A3DF00680D20 /* TabBarController.swift */,

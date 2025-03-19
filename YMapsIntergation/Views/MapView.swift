@@ -9,8 +9,11 @@ import UIKit
 import YandexMapsMobile
 
 class MapView: UIViewController, UIViewControllerTransitioningDelegate {
+    let defaultCameraPoint = YMKPoint(latitude: 41.319976, longitude: 69.239237)
     
     lazy var mapView: YMKMapView = YMKMapView(frame: mapContainerView.bounds)
+    
+    var selectedAddress: AddressModel?
 
     @IBOutlet var mapContainerView: UIView!
     @IBOutlet var searchContainerView: UIView!
@@ -38,16 +41,20 @@ class MapView: UIViewController, UIViewControllerTransitioningDelegate {
     
     
     @objc func showSearch() {
-        let vc = SearchView()
+        
+        let currentGeometry = YMKVisibleRegionUtils.toPolygon(with: mapView.mapWindow.map.visibleRegion)
+        let vc = SearchView(currentGeometry, searchCompletionHandler)
         
         vc.modalPresentationStyle = .custom
         vc.transitioningDelegate = self
         
-        vc.topRightMapPoint = mapView.mapWindow.map.visibleRegion.topRight
-        vc.bottomLeftMapPoint = mapView.mapWindow.map.visibleRegion.bottomLeft
-        vc.currentGeometry = YMKVisibleRegionUtils.toPolygon(with: mapView.mapWindow.map.visibleRegion)
-        
         self.present(vc, animated: true)
     }
 
+    func searchCompletionHandler(_ selectedAddress: AddressModel) {
+        self.searchLabel.text = selectedAddress.title
+        let cameraPoint = selectedAddress.geometry?.point ?? defaultCameraPoint
+        let position = YMKCameraPosition(target: cameraPoint, zoom: 14, azimuth: 0, tilt: 0)
+        mapView.mapWindow.map.move(with: position)
+    }
 }
