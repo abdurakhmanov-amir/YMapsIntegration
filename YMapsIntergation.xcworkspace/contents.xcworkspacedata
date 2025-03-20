@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:YMapsIntergation/Models/Entities/AddressEntity+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:YMapsIntergation/Models/Entities/AddressEntity+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:YMapsIntergation.xcodeproj">
    </FileRef>
    <FileRef

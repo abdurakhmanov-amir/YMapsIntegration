@@ -17,10 +17,17 @@ class AddressDetailView: UIViewController {
     @IBOutlet var closeButton: UIButton!
     @IBOutlet var addToFavouriteButton: UIButton!
     
+    var selectedAddress: AddressModel!
+    var addressManager = MapAddressManager()
+    var storedAddresses: [AddressModel]!
+    
     var closeHandler: (() -> Void)?
     var addToFavouriteHandler: (() -> Void)?
     
-    init() {
+    
+    init(_ selectedAddress: AddressModel) {
+        self.selectedAddress = selectedAddress
+        
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -34,6 +41,17 @@ class AddressDetailView: UIViewController {
         super.viewDidLoad()
         
         preferredContentSize = CGSize(width: Int(UIScreen.main.bounds.width), height: prefferedContentHeight)
+        closeButton.addTarget(self, action: #selector(closeButtonTapped), for: .touchUpInside)
+        addToFavouriteButton.addTarget(self, action: #selector(addToFavouriteButtonTapped), for: .touchUpInside)
+        
+        guard let selectedAddress else {
+            return
+        }
+        
+        titleLabel.text = selectedAddress.title
+        addressLabel.text = selectedAddress.address
+        
+        storedAddresses = addressManager.getAddresses()
     }
     
     
@@ -54,15 +72,12 @@ class AddressDetailView: UIViewController {
             return
         }
         
+        dismiss(animated: true)
         closeHandler()
     }
     
     
     @objc private func addToFavouriteButtonTapped() {
-        guard let addToFavouriteHandler else {
-            return
-        }
-        
-        addToFavouriteHandler()
+        addressManager.save(selectedAddress)
     }
 }

@@ -18,15 +18,13 @@ class SearchView: UIViewController, ObservableObject {
     private var currentGeometry: YMKGeometry
     private var completionHandler: (AddressModel) -> Void
     
-    private var suggestions: [AddressModel] = []
     private var tableViewSource: SuggestionsTableViewSource!
     
     @Published private var searchedText = ""
     
-    private var searchManager: YMKSearchManager!
-    private var searchSession: YMKSearchSession!
-    
     private var cancelables: [AnyCancellable] = []
+    
+    private var mapSearchManager: SearchManager = MapSearchManager()
     
     
     init(_ currentGeometry: YMKGeometry,  _ completionHanler: @escaping (AddressModel) -> Void) {
@@ -56,19 +54,25 @@ class SearchView: UIViewController, ObservableObject {
         tableView.dataSource = tableViewSource
         tableView.reloadData()
         
-        searchManager = YMKSearchFactory.instance().createSearchManager(with: .combined)
-        
         searchTextField.addTarget(self, action: #selector(searchTextChanged), for: .editingChanged)
         
         $searchedText
             .debounce(for: .seconds(3), scheduler: DispatchQueue.main)
+            .receive(on: DispatchQueue.main)
             .sink {value in
                 
                 if (value.count == 0) {
                     return
                 }
                 
-                self.search(value)
+                Task {
+                    let addresses = await self.mapSearchManager.search(value, self.currentGeometry)
+                    for address in addresses {
+                        address.selectedHandler = self.searchItemSelected
+                    }
+                    self.tableViewSource.data = addresses
+                    self.tableView.reloadData()
+                }
             }
             .store(in: &cancelables)
     }
@@ -77,46 +81,10 @@ class SearchView: UIViewController, ObservableObject {
     @objc private func searchTextChanged(textField: UITextField) {
         self.searchedText = textField.text ?? ""
     }
-    
-    
-    private func search(_ searchText: String) {
-        searchSession = searchManager.submit(withText: searchText,
-                             geometry: currentGeometry,
-                             searchOptions: YMKSearchOptions(),
-                             responseHandler: searchResponseHandler)
-        
-    }
 
     
-    private func searchResponseHandler(response: YMKSearchResponse?, error: Error?) {
-        if let error {
-            print(error)
-            
-            return
-        }
-        
-        guard let response = response else {
-            return
-        }
-        
-        if (response.collection.children.count == 0) {
-            return
-        }
-        
-        let searchItems = response.collection.children
-        
-        self.tableViewSource.data = searchItems.map { searchItem in
-            let address = AddressModel(searchItem)
-            address.selectedHandler = searchItemSelected
-            
-            return address
-        }
-        
-        self.tableView.reloadData()
-    }
-    
-    
     private func searchItemSelected(_ selectedAddress: AddressModel) {
+        mapSearchManager.selectedAddress = selectedAddress
         completionHandler(selectedAddress)
         dismiss(animated: true)
     }

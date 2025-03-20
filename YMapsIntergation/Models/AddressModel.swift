@@ -26,6 +26,12 @@ class AddressModel {
         geometry = searchItem.obj?.geometry as? YMKGeometry
     }
     
+    init(_ title: String, _ address: String, _ longitude: Double, _ latitude: Double) {
+        self.title = title
+        self.address = address
+        self.geometry = YMKGeometry(point: YMKPoint(latitude: latitude, longitude: longitude))
+    }
+    
     
     func itemSelected() {
         guard let selectedHandler else {

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavouriteAddressesView" customModule="YMapsIntergation" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="7hE-t1-bQm" id="Mzp-C6-FDS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bkP-0M-0w5">
+                    <rect key="frame" x="0.0" y="59" width="393" height="58.666666666666657"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мои адреса" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQ9-an-uSO">
+                            <rect key="frame" x="128.33333333333337" y="15.000000000000002" width="136.66666666666663" height="28.666666666666671"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="MQ9-an-uSO" secondAttribute="bottom" constant="15" id="FzD-KR-Ovw"/>
+                        <constraint firstItem="MQ9-an-uSO" firstAttribute="centerX" secondItem="bkP-0M-0w5" secondAttribute="centerX" id="Q45-mu-iaV"/>
+                        <constraint firstItem="MQ9-an-uSO" firstAttribute="top" secondItem="bkP-0M-0w5" secondAttribute="top" constant="15" id="ppI-fJ-Rga"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7hE-t1-bQm">
+                    <rect key="frame" x="0.0" y="129.66666666666669" width="393" height="722.33333333333326"/>
+                    <color key="backgroundColor" red="0.80392156862745101" green="0.7803921568627451" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="sectionIndexBackgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="bkP-0M-0w5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="9e5-AC-fBI"/>
+                <constraint firstAttribute="bottom" secondItem="7hE-t1-bQm" secondAttribute="bottom" id="FwM-ab-3em"/>
+                <constraint firstItem="bkP-0M-0w5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="c29-zP-YrO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7hE-t1-bQm" secondAttribute="trailing" id="hKk-1a-WZl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bkP-0M-0w5" secondAttribute="trailing" id="j5L-N4-krb"/>
+                <constraint firstItem="7hE-t1-bQm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lAY-Vy-j8H"/>
+                <constraint firstItem="7hE-t1-bQm" firstAttribute="top" secondItem="bkP-0M-0w5" secondAttribute="bottom" constant="12" id="yfO-fF-6Oy"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

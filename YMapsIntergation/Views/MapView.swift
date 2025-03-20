@@ -46,7 +46,7 @@ class MapView: UIViewController, UIViewControllerTransitioningDelegate {
     }
     
     
-    @objc func showSearch() {
+    @objc private func showSearch() {
         
         let currentGeometry = YMKVisibleRegionUtils.toPolygon(with: mapView.mapWindow.map.visibleRegion)
         let vc = SearchView(currentGeometry, searchCompletionHandler)
@@ -56,19 +56,24 @@ class MapView: UIViewController, UIViewControllerTransitioningDelegate {
         
         self.present(vc, animated: true)
     }
+    
 
-    func searchCompletionHandler(_ selectedAddress: AddressModel) {
+    private func searchCompletionHandler(_ selectedAddress: AddressModel) {
         self.searchLabel.text = selectedAddress.title
         let cameraPoint = selectedAddress.geometry?.point ?? defaultCameraPoint
         let position = YMKCameraPosition(target: cameraPoint, zoom: 14, azimuth: 0, tilt: 0)
         mapView.mapWindow.map.move(with: position)
         
-        let currentGeometry = YMKVisibleRegionUtils.toPolygon(with: mapView.mapWindow.map.visibleRegion)
-        let vc = AddressDetailView()
+        let vc = AddressDetailView(selectedAddress)
         
         vc.modalPresentationStyle = .custom
         vc.transitioningDelegate = self
+        vc.closeHandler = closeDetailsHandler
         
         self.present(vc, animated: true)
+    }
+    
+    private func closeDetailsHandler() {
+        
     }
 }

@@ -23,6 +23,16 @@
 		296A70B72D85A51C00680D20 /* ViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296A70B52D85A51C00680D20 /* ViewController2.xib */; };
 		296A70BA2D85A7DF00680D20 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296A70B82D85A7DF00680D20 /* ViewController3.swift */; };
 		296A70BB2D85A7DF00680D20 /* ViewController3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296A70B92D85A7DF00680D20 /* ViewController3.xib */; };
+		297049922D8BFA0F0037D8F6 /* SearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297049912D8BFA0F0037D8F6 /* SearchManager.swift */; };
+		297049942D8BFC760037D8F6 /* MapSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297049932D8BFC760037D8F6 /* MapSearchManager.swift */; };
+		297049972D8BFF320037D8F6 /* TaskCompletionSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297049962D8BFF320037D8F6 /* TaskCompletionSource.swift */; };
+		2970499C2D8C0DD80037D8F6 /* MapAddressManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2970499B2D8C0DD80037D8F6 /* MapAddressManager.swift */; };
+		2970499F2D8C0E640037D8F6 /* StoredEntities.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2970499D2D8C0E640037D8F6 /* StoredEntities.xcdatamodeld */; };
+		297049A62D8C1D5B0037D8F6 /* AddressManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297049A52D8C1D5B0037D8F6 /* AddressManager.swift */; };
+		297049A92D8C21780037D8F6 /* FavouriteAddressesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 297049A82D8C21780037D8F6 /* FavouriteAddressesView.xib */; };
+		297049AA2D8C21780037D8F6 /* FavouriteAddressesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297049A72D8C21780037D8F6 /* FavouriteAddressesView.swift */; };
+		297049AD2D8C22CD0037D8F6 /* FavouriteAddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 297049AC2D8C22CD0037D8F6 /* FavouriteAddressCell.xib */; };
+		297049AE2D8C22CD0037D8F6 /* FavouriteAddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297049AB2D8C22CD0037D8F6 /* FavouriteAddressCell.swift */; };
 		299786972D8A11B6006E248B /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299786952D8A11B6006E248B /* SearchView.swift */; };
 		299786982D8A11B6006E248B /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 299786962D8A11B6006E248B /* SearchView.xib */; };
 		2997869C2D8A16AC006E248B /* SearchSuggestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2997869A2D8A16AC006E248B /* SearchSuggestionCell.swift */; };
@@ -51,6 +61,16 @@
 		296A70B52D85A51C00680D20 /* ViewController2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController2.xib; sourceTree = "<group>"; };
 		296A70B82D85A7DF00680D20 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		296A70B92D85A7DF00680D20 /* ViewController3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController3.xib; sourceTree = "<group>"; };
+		297049912D8BFA0F0037D8F6 /* SearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchManager.swift; sourceTree = "<group>"; };
+		297049932D8BFC760037D8F6 /* MapSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSearchManager.swift; sourceTree = "<group>"; };
+		297049962D8BFF320037D8F6 /* TaskCompletionSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCompletionSource.swift; sourceTree = "<group>"; };
+		2970499B2D8C0DD80037D8F6 /* MapAddressManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAddressManager.swift; sourceTree = "<group>"; };
+		2970499E2D8C0E640037D8F6 /* StoredEntities.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StoredEntities.xcdatamodel; sourceTree = "<group>"; };
+		297049A52D8C1D5B0037D8F6 /* AddressManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressManager.swift; sourceTree = "<group>"; };
+		297049A72D8C21780037D8F6 /* FavouriteAddressesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteAddressesView.swift; sourceTree = "<group>"; };
+		297049A82D8C21780037D8F6 /* FavouriteAddressesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteAddressesView.xib; sourceTree = "<group>"; };
+		297049AB2D8C22CD0037D8F6 /* FavouriteAddressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteAddressCell.swift; sourceTree = "<group>"; };
+		297049AC2D8C22CD0037D8F6 /* FavouriteAddressCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteAddressCell.xib; sourceTree = "<group>"; };
 		299786952D8A11B6006E248B /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		299786962D8A11B6006E248B /* SearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
 		2997869A2D8A16AC006E248B /* SearchSuggestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSuggestionCell.swift; sourceTree = "<group>"; };
@@ -74,15 +94,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		29250B3B2D8B7552007E84B7 /* Partials */ = {
-			isa = PBXGroup;
-			children = (
-				29250B3C2D8B766B007E84B7 /* AddressDetailView.swift */,
-				29250B3E2D8B7681007E84B7 /* AddressDetailView.xib */,
-			);
-			path = Partials;
-			sourceTree = "<group>";
-		};
 		294BF8AA2D88C6E6006DA6F3 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +124,9 @@
 		296A70982D8592ED00680D20 /* YMapsIntergation */ = {
 			isa = PBXGroup;
 			children = (
+				297049952D8BFEC50037D8F6 /* Common */,
+				2970498E2D8BF9C40037D8F6 /* Protocols */,
+				2970498D2D8BF9BA0037D8F6 /* Managers */,
 				296A70B12D85A0B200680D20 /* Models */,
 				296A70B02D85A0A900680D20 /* ViewModels */,
 				296A70AF2D85A09F00680D20 /* Views */,
@@ -120,6 +134,7 @@
 				296A709D2D8592ED00680D20 /* ViewController.swift */,
 				296A70A22D8592EE00680D20 /* Assets.xcassets */,
 				296A70A42D8592EE00680D20 /* LaunchScreen.storyboard */,
+				2970499D2D8C0E640037D8F6 /* StoredEntities.xcdatamodeld */,
 				296A70A72D8592EE00680D20 /* Info.plist */,
 				296A70AD2D859C5000680D20 /* ViewController.xib */,
 			);
@@ -129,9 +144,10 @@
 		296A70AF2D85A09F00680D20 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				29250B3B2D8B7552007E84B7 /* Partials */,
 				299786992D8A165B006E248B /* Cells */,
 				294BF8AA2D88C6E6006DA6F3 /* Common */,
+				29250B3C2D8B766B007E84B7 /* AddressDetailView.swift */,
+				29250B3E2D8B7681007E84B7 /* AddressDetailView.xib */,
 				296A70B22D85A3DF00680D20 /* TabBarController.swift */,
 				296A70B42D85A51C00680D20 /* ViewController2.swift */,
 				296A70B52D85A51C00680D20 /* ViewController2.xib */,
@@ -142,6 +158,8 @@
 				294BF8A82D88BE5F006DA6F3 /* TestPresent.swift */,
 				299786952D8A11B6006E248B /* SearchView.swift */,
 				299786962D8A11B6006E248B /* SearchView.xib */,
+				297049A72D8C21780037D8F6 /* FavouriteAddressesView.swift */,
+				297049A82D8C21780037D8F6 /* FavouriteAddressesView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -156,9 +174,43 @@
 		296A70B12D85A0B200680D20 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				297049A22D8C12090037D8F6 /* Entities */,
 				29250B392D8B2173007E84B7 /* AddressModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		2970498D2D8BF9BA0037D8F6 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				297049932D8BFC760037D8F6 /* MapSearchManager.swift */,
+				2970499B2D8C0DD80037D8F6 /* MapAddressManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		2970498E2D8BF9C40037D8F6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				297049912D8BFA0F0037D8F6 /* SearchManager.swift */,
+				297049A52D8C1D5B0037D8F6 /* AddressManager.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		297049952D8BFEC50037D8F6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				297049962D8BFF320037D8F6 /* TaskCompletionSource.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		297049A22D8C12090037D8F6 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		299786992D8A165B006E248B /* Cells */ = {
@@ -166,6 +218,8 @@
 			children = (
 				2997869A2D8A16AC006E248B /* SearchSuggestionCell.swift */,
 				2997869B2D8A16AC006E248B /* SearchSuggestionCell.xib */,
+				297049AB2D8C22CD0037D8F6 /* FavouriteAddressCell.swift */,
+				297049AC2D8C22CD0037D8F6 /* FavouriteAddressCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -251,6 +305,8 @@
 				296A70A62D8592EE00680D20 /* LaunchScreen.storyboard in Resources */,
 				299786982D8A11B6006E248B /* SearchView.xib in Resources */,
 				296A70B72D85A51C00680D20 /* ViewController2.xib in Resources */,
+				297049A92D8C21780037D8F6 /* FavouriteAddressesView.xib in Resources */,
+				297049AD2D8C22CD0037D8F6 /* FavouriteAddressCell.xib in Resources */,
 				29250B3F2D8B7681007E84B7 /* AddressDetailView.xib in Resources */,
 				296A70AE2D859C5000680D20 /* ViewController.xib in Resources */,
 				29FB0AE92D87264400AAF620 /* MapView.xib in Resources */,
@@ -326,8 +382,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				297049942D8BFC760037D8F6 /* MapSearchManager.swift in Sources */,
+				297049AA2D8C21780037D8F6 /* FavouriteAddressesView.swift in Sources */,
 				29250B3A2D8B2181007E84B7 /* AddressModel.swift in Sources */,
+				297049AE2D8C22CD0037D8F6 /* FavouriteAddressCell.swift in Sources */,
+				297049922D8BFA0F0037D8F6 /* SearchManager.swift in Sources */,
+				297049972D8BFF320037D8F6 /* TaskCompletionSource.swift in Sources */,
 				29250B412D8B88ED007E84B7 /* SmallModalController.swift in Sources */,
+				297049A62D8C1D5B0037D8F6 /* AddressManager.swift in Sources */,
 				296A70BA2D85A7DF00680D20 /* ViewController3.swift in Sources */,
 				29250B3D2D8B766B007E84B7 /* AddressDetailView.swift in Sources */,
 				299786972D8A11B6006E248B /* SearchView.swift in Sources */,
@@ -338,7 +400,9 @@
 				296A70B32D85A3DF00680D20 /* TabBarController.swift in Sources */,
 				296A70B62D85A51C00680D20 /* ViewController2.swift in Sources */,
 				296A709E2D8592ED00680D20 /* ViewController.swift in Sources */,
+				2970499F2D8C0E640037D8F6 /* StoredEntities.xcdatamodeld in Sources */,
 				296A709A2D8592ED00680D20 /* AppDelegate.swift in Sources */,
+				2970499C2D8C0DD80037D8F6 /* MapAddressManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,6 +623,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2970499D2D8C0E640037D8F6 /* StoredEntities.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2970499E2D8C0E640037D8F6 /* StoredEntities.xcdatamodel */,
+			);
+			currentVersion = 2970499E2D8C0E640037D8F6 /* StoredEntities.xcdatamodel */;
+			path = StoredEntities.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 296A708E2D8592ED00680D20 /* Project object */;
 }
