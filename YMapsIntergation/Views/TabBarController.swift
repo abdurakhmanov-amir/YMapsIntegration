@@ -16,18 +16,22 @@ class TabBarController: UITabBarController {
     }
     
     private func setTabs() {
-        let vc1 = FavouriteAddressesView()
-        let vc2 = MapView()
+        let favouritesView = DependenciesProvider.ResolveView(FavouriteAddressesView.self)
+        let mapView = DependenciesProvider.ResolveView(MapView.self)
+        
+        guard let favouritesView, let mapView else {
+            return
+        }
         
         let locationImage = UIImage(named: "location-filled")
         let locationImageSelected = UIImage(named: "location-filled")
         let favouriteImage = UIImage(named: "bookmark-alt")
         let favouriteImageSelected = UIImage(named: "bookmark-alt")
         
-        vc1.tabBarItem = UITabBarItem(title: "", image: favouriteImage, selectedImage: favouriteImageSelected)
-        vc2.tabBarItem = UITabBarItem(title: "", image: locationImage, selectedImage: locationImageSelected)
+        favouritesView.tabBarItem = UITabBarItem(title: "", image: favouriteImage, selectedImage: favouriteImageSelected)
+        mapView.tabBarItem = UITabBarItem(title: "", image: locationImage, selectedImage: locationImageSelected)
         
-        self.setViewControllers([vc1, vc2], animated: true)
+        self.setViewControllers([favouritesView, mapView], animated: true)
         self.selectedIndex = 1
         
         for item in self.tabBar.items! {

@@ -29,6 +29,8 @@ import CoreData
         YMKMapKit.setLocale("ru_RU")
         YMKMapKit.sharedInstance()
         
+        DependenciesProvider.RegisterDependencies()
+        
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
         let navigationController = UINavigationController()

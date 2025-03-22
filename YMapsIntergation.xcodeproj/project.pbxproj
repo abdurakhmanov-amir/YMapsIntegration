@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		290B3AB12D8EC87E00FDA620 /* DependenciesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290B3AB02D8EC87E00FDA620 /* DependenciesProvider.swift */; };
 		29250B3A2D8B2181007E84B7 /* AddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29250B392D8B2173007E84B7 /* AddressModel.swift */; };
 		29250B3D2D8B766B007E84B7 /* AddressDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29250B3C2D8B766B007E84B7 /* AddressDetailView.swift */; };
 		29250B3F2D8B7681007E84B7 /* AddressDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29250B3E2D8B7681007E84B7 /* AddressDetailView.xib */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		290B3AB02D8EC87E00FDA620 /* DependenciesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesProvider.swift; sourceTree = "<group>"; };
 		29250B392D8B2173007E84B7 /* AddressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressModel.swift; sourceTree = "<group>"; };
 		29250B3C2D8B766B007E84B7 /* AddressDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDetailView.swift; sourceTree = "<group>"; };
 		29250B3E2D8B7681007E84B7 /* AddressDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressDetailView.xib; sourceTree = "<group>"; };
@@ -89,6 +91,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		290B3AAF2D8EC85B00FDA620 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				290B3AB02D8EC87E00FDA620 /* DependenciesProvider.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		296A708D2D8592ED00680D20 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +120,7 @@
 		296A70982D8592ED00680D20 /* YMapsIntergation */ = {
 			isa = PBXGroup;
 			children = (
+				290B3AAF2D8EC85B00FDA620 /* Helpers */,
 				297049952D8BFEC50037D8F6 /* Common */,
 				2970498E2D8BF9C40037D8F6 /* Protocols */,
 				2970498D2D8BF9BA0037D8F6 /* Managers */,
@@ -371,6 +382,7 @@
 				294BF8AC2D88C712006DA6F3 /* PanToDismissController.swift in Sources */,
 				2997869C2D8A16AC006E248B /* SearchSuggestionCell.swift in Sources */,
 				29FB0AE82D87264400AAF620 /* MapView.swift in Sources */,
+				290B3AB12D8EC87E00FDA620 /* DependenciesProvider.swift in Sources */,
 				296A70B32D85A3DF00680D20 /* TabBarController.swift in Sources */,
 				2970499F2D8C0E640037D8F6 /* StoredEntities.xcdatamodeld in Sources */,
 				296A709A2D8592ED00680D20 /* AppDelegate.swift in Sources */,
