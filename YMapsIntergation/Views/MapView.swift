@@ -48,13 +48,19 @@ class MapView: UIViewController, UIViewControllerTransitioningDelegate {
     
     @objc private func showSearch() {
         
+        let searchView = DependenciesProvider.ResolveView(SearchView.self)
+        
+        guard let searchView else {
+            return
+        }
+        
         let currentGeometry = YMKVisibleRegionUtils.toPolygon(with: mapView.mapWindow.map.visibleRegion)
-        let vc = SearchView(currentGeometry, searchCompletionHandler)
+        searchView.currentGeometry = currentGeometry
+        searchView.completionHandler = searchCompletionHandler
+        searchView.modalPresentationStyle = .custom
+        searchView.transitioningDelegate = self
         
-        vc.modalPresentationStyle = .custom
-        vc.transitioningDelegate = self
-        
-        self.present(vc, animated: true)
+        self.present(searchView, animated: true)
     }
     
 
@@ -64,13 +70,18 @@ class MapView: UIViewController, UIViewControllerTransitioningDelegate {
         let position = YMKCameraPosition(target: cameraPoint, zoom: 14, azimuth: 0, tilt: 0)
         mapView.mapWindow.map.move(with: position)
         
-        let vc = AddressDetailView(selectedAddress)
+        let detailsView = DependenciesProvider.ResolveView(AddressDetailView.self)
         
-        vc.modalPresentationStyle = .custom
-        vc.transitioningDelegate = self
-        vc.closeHandler = closeDetailsHandler
+        guard let detailsView else {
+            return
+        }
         
-        self.present(vc, animated: true)
+        detailsView.selectedAddress = selectedAddress
+        detailsView.modalPresentationStyle = .custom
+        detailsView.transitioningDelegate = self
+        detailsView.closeHandler = closeDetailsHandler
+        
+        self.present(detailsView, animated: true)
     }
     
     private func closeDetailsHandler() {

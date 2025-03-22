@@ -39,5 +39,7 @@ final class DependenciesProvider {
     private static func registerViews() {
         viewsContainer.register(MapView.self, factory: { r in MapView() })
         viewsContainer.register(FavouriteAddressesView.self, factory: { r in FavouriteAddressesView(r.resolve(AddressManager.self)!) })
+        viewsContainer.register(SearchView.self, factory: { r in SearchView(r.resolve(SearchManager.self)!)})
+        viewsContainer.register(AddressDetailView.self, factory: { r in AddressDetailView(r.resolve(AddressManager.self)!)})
     }
 }

@@ -15,8 +15,8 @@ class SearchView: UIViewController, ObservableObject {
     @IBOutlet var tableView: UITableView!
     @IBOutlet var searchTextField: UITextField!
     
-    private var currentGeometry: YMKGeometry
-    private var completionHandler: (AddressModel) -> Void
+    var currentGeometry: YMKGeometry!
+    var completionHandler: ((AddressModel) -> Void)!
     
     private var tableViewSource: SuggestionsTableViewSource!
     
@@ -24,22 +24,18 @@ class SearchView: UIViewController, ObservableObject {
     
     private var cancelables: [AnyCancellable] = []
     
-    private var mapSearchManager: SearchManager = MapSearchManager()
+    private var mapSearchManager: SearchManager
     
     
-    init(_ currentGeometry: YMKGeometry,  _ completionHanler: @escaping (AddressModel) -> Void) {
-        self.currentGeometry = currentGeometry
-        self.completionHandler = completionHanler
+    init(_ searchManager: SearchManager) {
+        self.mapSearchManager = searchManager
         
         super.init(nibName: nil, bundle: nil)
     }
     
     
     required init?(coder: NSCoder) {
-        self.currentGeometry = YMKGeometry()
-        self.completionHandler = {address in }
-        
-        super.init(coder: coder)
+        fatalError("init(coder:) has not been implemented")
     }
     
     

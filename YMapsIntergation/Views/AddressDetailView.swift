@@ -17,23 +17,21 @@ class AddressDetailView: UIViewController {
     @IBOutlet var closeButton: UIButton!
     @IBOutlet var addToFavouriteButton: UIButton!
     
+    var addressManager: AddressManager
     var selectedAddress: AddressModel!
-    var addressManager = MapAddressManager()
-    var storedAddresses: [AddressModel]!
     
     var closeHandler: (() -> Void)?
-    var addToFavouriteHandler: (() -> Void)?
     
     
-    init(_ selectedAddress: AddressModel) {
-        self.selectedAddress = selectedAddress
+    init(_ addressManager: AddressManager) {
+        self.addressManager = addressManager
         
         super.init(nibName: nil, bundle: nil)
     }
     
     
     required init?(coder: NSCoder) {
-        super.init(coder: coder)
+        fatalError("init(coder:) has not been implemented")
     }
     
     
@@ -50,8 +48,6 @@ class AddressDetailView: UIViewController {
         
         titleLabel.text = selectedAddress.title
         addressLabel.text = selectedAddress.address
-        
-        storedAddresses = addressManager.getAddresses()
     }
     
     
