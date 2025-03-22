@@ -61,7 +61,7 @@ class MapAddressManager: AddressManager {
 
                 if results.count > 0 {
 
-                    for result in results as! [NSManagedObject] {
+                    for result in results {
 
                         print ("Note:")
                         if let designation = result.value(forKey: "designation") {

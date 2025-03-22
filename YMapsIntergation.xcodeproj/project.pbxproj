@@ -82,13 +82,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		294BF8AA2D88C6E6006DA6F3 /* Common */ = {
+		290B3AAC2D8EC6DB00FDA620 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				294BF8AB2D88C712006DA6F3 /* PanToDismissController.swift */,
 				29250B402D8B88ED007E84B7 /* SmallModalController.swift */,
 			);
-			path = Common;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		296A708D2D8592ED00680D20 = {
@@ -131,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				299786992D8A165B006E248B /* Cells */,
-				294BF8AA2D88C6E6006DA6F3 /* Common */,
 				29250B3C2D8B766B007E84B7 /* AddressDetailView.swift */,
 				29250B3E2D8B7681007E84B7 /* AddressDetailView.xib */,
 				296A70B22D85A3DF00680D20 /* TabBarController.swift */,
@@ -183,6 +182,7 @@
 		297049952D8BFEC50037D8F6 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				290B3AAC2D8EC6DB00FDA620 /* Views */,
 				297049962D8BFF320037D8F6 /* TaskCompletionSource.swift */,
 			);
 			path = Common;
