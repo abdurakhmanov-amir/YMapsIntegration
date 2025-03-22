@@ -63,14 +63,14 @@ class SmallModalController: UIPresentationController {
     }
     
     
-    func setupPan() {
+    private func setupPan() {
         panView = UIView()
         panView.translatesAutoresizingMaskIntoConstraints = false
         panView.backgroundColor = UIColor.white
     }
     
     
-    func setupSlashView() {
+    private func setupSlashView() {
         slashView = UIView()
         slashView.backgroundColor = UIColor(red: 208.0/255.0, green: 207.0/255.0, blue: 207.0/255.0, alpha: 1.0)
         slashView.layer.cornerRadius = 2

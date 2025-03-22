@@ -55,13 +55,13 @@ class AddressDetailView: UIViewController {
     }
     
     
-    func setDetailView(address: AddressModel) {
+    private func setDetailView(address: AddressModel) {
         titleLabel.text = address.title
         addressLabel.text = address.address
     }
     
     
-    func setupButtons() {
+    private func setupButtons() {
         closeButton.addTarget(self, action: #selector(closeButtonTapped), for: .touchUpInside)
         addToFavouriteButton.addTarget(self, action: #selector(addToFavouriteButtonTapped), for: .touchUpInside)
     }
